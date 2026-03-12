@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 30px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+ul {
+    list-style: none;
+    margin-left: 20px;
+    display: none; 
+}
+li {
+    margin: 5px 0;
+    padding: 8px 15px 8px 25px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    position: relative;
+    transition: all 0.2s ease;
+}
+li:hover {
+    border-left-color: #007bff;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(52,152,219,0.2);
+}
+.marker {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menu-root {
+    display: block;
+    margin-left: 0;
+}
+#message {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e7f3ff;
+    border-radius: 5px;
+    border-left: 4px solid #007bff;
+}
+.category-passenger { background: #1194f1; border-left-color: #0a5d9e; }
+.category-russian { background: #ac6a00; border-left-color: #6b4200; }
+.category-import { background: #9f02b8; border-left-color: #5f016e; }
+.category-china { background: #ffe600; border-left-color: #b39b00; }
+.category-frame { background: #b33b00; border-left-color: #702500; }
+.category-crossover { background: #25fdf2; border-left-color: #17a39b; }
+.category-sport { background: #bb001c; border-left-color: #750012; }
